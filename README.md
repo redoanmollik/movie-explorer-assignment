@@ -1,6 +1,6 @@
 # CineScope — Movie Explorer
 
-CineScope is a responsive React movie and TV show explorer built for the Movie Explorer assignment. It uses the free [TVMaze API](https://www.tvmaze.com/api) to load titles, supports live search, and opens a detail modal for each result.
+CineScope is a responsive React Movie Explorer built for the assignment. It uses the free [TVMaze API](https://www.tvmaze.com/api) to load shows, supports live title search, and opens a detail modal for each result.
 
 ## Assignment features
 
@@ -11,7 +11,7 @@ CineScope is a responsive React movie and TV show explorer built for the Movie E
 - Reusable `MovieCard` component with poster, title, year, rating, genre, and See Details button.
 - Responsive details modal with poster, title, overview, rating, release year, genre, network, and runtime.
 - Modal closes through the close button or by clicking the backdrop.
-- Loading skeletons, empty search state, API fallback content, keyboard-friendly controls, and reduced-motion support.
+- Loading skeletons, empty search state, API fallback content, and touch-friendly mobile controls.
 - Mobile-first layout with two columns on small screens and four columns on desktop.
 
 ## Run locally
@@ -21,21 +21,21 @@ pnpm install
 pnpm dev
 ```
 
-Then open the local URL shown by Vite. To create a production build:
+To create a production build:
 
 ```bash
 pnpm build
 ```
 
-## Tech stack
+## Technology stack
 
-React 19, TypeScript, Vite, Tailwind CSS, Wouter, Lucide React, and the public TVMaze API.
+JavaScript, React, Vite, CSS, Tailwind CSS, Wouter, Lucide React, and the public TVMaze API. The application source intentionally uses JavaScript/JSX to match the assignment technology stack.
 
 ## Project structure
 
-- `client/src/pages/Home.tsx` — landing page.
-- `client/src/pages/Movies.tsx` — search and listing page.
-- `client/src/components/MovieCard.tsx` — reusable card and details modal.
+- `client/src/pages/Home.jsx` — landing page.
+- `client/src/pages/Movies.jsx` — search and listing page.
+- `client/src/components/MovieCard.jsx` — reusable card and details modal.
 - `client/src/index.css` — visual system and responsive styles.
 
 ## Credits
